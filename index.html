@@ -9,31 +9,31 @@
 </head>
 <body>
   <div class="container">
-    <form action="index.html" enctype="multipart/form-data">
+    <form id="form" action="index.html" enctype="multipart/form-data">
       <fieldset>
         <legend>Personal Information</legend>
         <label>
           <span>First Name</span>
-          <input type="text" name="firstname" id="firstname" autocomplete="off">
+          <input required type="text" name="firstname" id="firstname" autocomplete="off">
         </label>
         <label>
           <span>Last Name</span>
-          <input type="text" name="lastname" id="lastname" autocomplete="off">
+          <input required type="text" name="lastname" id="lastname" autocomplete="off">
         </label>
         <label>
           <span>Email</span>
-          <input type="email" name="email" id="email" autocomplete="off">
+          <input required type="email" name="email" id="email" autocomplete="off" pattern="[a-z0-9._%+\-]+@canada.ca">
         </label>
         <label>
           <span>Hire Date</span>
-          <input type="date" name="hire_date" id="hire_date">
+          <input required type="date" name="hire_date" id="hire_date">
         </label>
       </fieldset>
       <fieldset>
         <legend>Profile Photo</legend>
         <label>
           <span>Upload photo</span>
-          <input type="file" name="photo" accept=".jpg, .png">
+          <input required type="file" name="photo" accept=".jpg, .png">
         </label>
       </fieldset>
       <fieldset class="form__btns">
@@ -44,7 +44,7 @@
     </form>
 
     <div id="employees">
-      <table cellspacing="0" cellpadding="0">
+      <table id="table" cellspacing="0" cellpadding="0">
         <thead>
           <th>Photo</th>
           <th>First Name</th>
