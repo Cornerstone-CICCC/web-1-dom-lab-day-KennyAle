@@ -64,12 +64,12 @@ tbody tr {
   background-color: whitesmoke;
 }
 
-tr button {
-  
-}
-
 tr img {
   width: 80px;
+}
+
+td {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
