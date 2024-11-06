@@ -14,6 +14,7 @@ form.addEventListener('submit', (event) => {
 
 function createEmployee(photo, name, lastName, email, date) {
     const tableRow = document.createElement('tr')
+    const tdBtn = document.createElement('td')
     const deleteBtn = document.createElement('button')
     deleteBtn.innerHTML = 'Delete'
     tableRow.innerHTML = `
@@ -23,7 +24,8 @@ function createEmployee(photo, name, lastName, email, date) {
         <td>${email}</td>
         <td>${date}</td>
     `
-    tableRow.appendChild(deleteBtn)
+    tdBtn.appendChild(deleteBtn)
+    tableRow.appendChild(tdBtn)
     employees.appendChild(tableRow)
     deleteBtn.addEventListener('click', () => {
         if (confirm(`Do you want to delete ${name} ${lastName} employee?`) === true) {

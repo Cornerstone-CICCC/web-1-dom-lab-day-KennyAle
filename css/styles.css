@@ -52,4 +52,24 @@ body {
   padding: 0.25rem;
 }
 
+thead tr {
+  background-color: lightgray;
+}
+
+thead th {
+  padding: 1rem;
+}
+
+tbody tr {
+  background-color: whitesmoke;
+}
+
+tr button {
+  
+}
+
+tr img {
+  width: 80px;
+}
+
 /*# sourceMappingURL=styles.css.map */
